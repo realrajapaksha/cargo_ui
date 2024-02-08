@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'list_page.dart';
 import 'pick_up_page.dart';
 
 class DashboardPage extends StatefulWidget {
@@ -104,7 +105,13 @@ class _DashboardPageState extends State<DashboardPage> {
                       padding: EdgeInsets.only(
                           right: widthSize * .08, left: widthSize * .04),
                       child: InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const ListPage()),
+                          );
+                        },
                         borderRadius: BorderRadius.circular(5),
                         child: Ink(
                           height: 110,

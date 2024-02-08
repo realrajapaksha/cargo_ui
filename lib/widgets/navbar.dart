@@ -13,7 +13,7 @@ class Navbar extends StatelessWidget {
       child: Row(
         children: [
           InkWell(
-            onTap: (){
+            onTap: () {
               Navigator.pop(context);
             },
             child: Container(
@@ -36,7 +36,7 @@ class Navbar extends StatelessWidget {
           ),
           Text(
             title,
-            style: TextStyle(color: Colors.white, fontSize: 18),
+            style: const TextStyle(color: Colors.white, fontSize: 18),
           ),
         ],
       ),
