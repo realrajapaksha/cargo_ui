@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/main_button.dart';
-import '../widgets/main_text_field.dart';
 import '../widgets/navbar.dart';
 
 class ListPage extends StatefulWidget {
@@ -55,8 +54,9 @@ class _ListPageState extends State<ListPage> {
                                   color: const Color(0xFF132F47),
                                   borderRadius: BorderRadius.circular(15),
                                 ),
-                                child:  Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
                                   children: [
                                     const Text(
                                       "PAG 23456XY",
@@ -65,7 +65,8 @@ class _ListPageState extends State<ListPage> {
                                     ),
                                     CupertinoSwitch(
                                         activeColor: const Color(0xFF0D6AD4),
-                                        value: true, onChanged: (value){})
+                                        value: true,
+                                        onChanged: (value) {})
                                   ],
                                 ),
                               );

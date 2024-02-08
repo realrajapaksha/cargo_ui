@@ -1,3 +1,4 @@
+import 'package:cargo_ui/pages/scan_page.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/main_button.dart';
@@ -52,22 +53,32 @@ class _PickupPageState extends State<PickupPage> {
                               const SizedBox(
                                 width: 8,
                               ),
-                              Container(
-                                width: 40,
-                                height: 40,
-                                margin:
-                                    const EdgeInsets.symmetric(vertical: 10),
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(5),
-                                  color: Colors.blue,
-                                ),
-                                child: const Icon(
-                                  Icons.qr_code,
-                                  size: 25,
-                                  color: Colors.white,
+                              InkWell(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => const ScanPage()),
+                                  );
+                                },
+                                child: Container(
+                                  width: 40,
+                                  height: 40,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(5),
+                                    color: Colors.blue,
+                                  ),
+                                  child: const Icon(
+                                    Icons.qr_code,
+                                    size: 25,
+                                    color: Colors.white,
+                                  ),
                                 ),
                               ),
                             ],
+                          ),
+                          const SizedBox(
+                            height: 10,
                           ),
                           MainTextField(
                             labelText: 'Agent',
