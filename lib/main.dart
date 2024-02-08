@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'pages/dashboard.dart';
+import 'pages/dashboard_page.dart';
 import 'pages/login_page.dart';
 
 void main() {

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../widgets/main_button.dart';
 import '../widgets/main_text_field.dart';
-import 'dashboard.dart';
+import 'dashboard_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});

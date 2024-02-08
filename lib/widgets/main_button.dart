@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class MainButton extends StatelessWidget {
@@ -11,12 +10,12 @@ class MainButton extends StatelessWidget {
 
   const MainButton(
       {Key? key,
-        required this.title,
-        this.bgColor = const Color(0xFF0671C3),
-        this.fontSize = 15,
-        this.titleColor = Colors.white,
-        this.fontWeight = FontWeight.normal,
-        required this.onTapped})
+      required this.title,
+      this.bgColor = const Color(0xFF0671C3),
+      this.fontSize = 15,
+      this.titleColor = Colors.white,
+      this.fontWeight = FontWeight.normal,
+      required this.onTapped})
       : super(key: key);
 
   @override
